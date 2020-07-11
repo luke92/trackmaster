@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0"> -->
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>TrackMaster6</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>Servlet para index:valida usuario</description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.trackmaster.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Servlet para formulario alta usuario</description>
+    <display-name>FomularioAltaServlet</display-name>
+    <servlet-name>FomularioAltaServlet</servlet-name>
+    <servlet-class>com.trackmaster.servlet.FomularioAltaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FomularioAltaServlet</servlet-name>
+    <url-pattern>/FormularioAltaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Servlet para reedirigir login o registro</description>
+    <display-name>InicioServlet</display-name>
+    <servlet-name>InicioServlet</servlet-name>
+    <servlet-class>com.trackmaster.servlet.InicioServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InicioServlet</servlet-name>
+    <url-pattern>/InicioServlet.jr</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Servlet para carrito de compra</description>
+    <display-name>CarritoCompraServlet</display-name>
+    <servlet-name>CarritoCompraServlet</servlet-name>
+    <servlet-class>com.trackmaster.servlet.CarritoCompraServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CarritoCompraServlet</servlet-name>
+    <url-pattern>/CarritoCompraServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Servlet para usuario administrativo</description>
+    <display-name>LoginAdministrativoServlet</display-name>
+    <servlet-name>LoginAdministrativoServlet</servlet-name>
+    <servlet-class>com.trackmaster.servlet.LoginAdministrativoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginAdministrativoServlet</servlet-name>
+    <url-pattern>/LoginAdministrativoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Servlet para hacer la lista de productos del usuario</description>
+    <display-name>ProductosACarritoServlet</display-name>
+    <servlet-name>ProductosACarritoServlet</servlet-name>
+    <servlet-class>com.trackmaster.servlet.ProductosACarritoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductosACarritoServlet</servlet-name>
+    <url-pattern>/ProductosACarritoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Servlet para Menu</description>
+    <display-name>MenuServlet</display-name>
+    <servlet-name>MenuServlet</servlet-name>
+    <servlet-class>com.trackmaster.servlet.MenuServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MenuServlet</servlet-name>
+    <url-pattern>/MenuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Servlet para LogOut</description>
+    <display-name>LogOutServlet</display-name>
+    <servlet-name>LogOutServlet</servlet-name>
+    <servlet-class>com.trackmaster.servlet.LogOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogOutServlet</servlet-name>
+    <url-pattern>/LogOutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Servlet para confirmar pago</description>
+    <display-name>ConfirmarProductosServlet</display-name>
+    <servlet-name>ConfirmarProductosServlet</servlet-name>
+    <servlet-class>com.trackmaster.servlet.ConfirmarProductosServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConfirmarProductosServlet</servlet-name>
+    <url-pattern>/ConfirmarProductosServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
